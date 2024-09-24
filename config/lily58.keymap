@@ -29,16 +29,16 @@
                            &kp LALT  &kp LEFT_CONTROL  &mo 1   &kp ENTER               &kp SPACE              &mo 1   &kp RIGHT_CONTROL  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         Lower {
             bindings = <
-&kp F1          &kp F2  &kp F3        &kp F4        &kp F5            &kp F6                             &kp F7  &kp F8             &kp F9          &kp F10     &kp F11   &kp F12
-&none           &none   &kp N7        &kp N8        &kp N9            &kp MINUS                          &none   &none              &none           &none       &none     &none
-&none           &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6      &none                              &none   &kp BACKSPACE      &kp UP_ARROW    &kp DELETE  &none     &none
-&kp LEFT_SHIFT  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp X      &mkp LCLK    &mkp RCLK  &none   &kp LEFT           &kp DOWN_ARROW  &kp RIGHT   &kp PLUS  &none
-                                      &kp LEFT_ALT  &kp LEFT_CONTROL  &none      &none        &kp SPACE  &kp N0  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp F1          &kp F2  &kp F3        &kp F4        &kp F5            &kp F6                             &kp F7                 &kp F8             &kp F9          &kp F10          &kp F11   &kp F12
+&none           &none   &kp N7        &kp N8        &kp N9            &kp MINUS                          &kp KP_SUBTRACT        &kp KP_PLUS        &kp KP_DIVIDE   &kp KP_MULTIPLY  &none     &none
+&none           &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6      &none                              &kp LEFT_PARENTHESIS   &kp BACKSPACE      &kp UP_ARROW    &kp DELETE       &none     &none
+&kp LEFT_SHIFT  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp X      &mkp LCLK    &mkp RCLK  &kp RIGHT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT        &kp PLUS  &none
+                                      &kp LEFT_ALT  &kp LEFT_CONTROL  &to 4      &kp ENTER    &kp SPACE  &to 4                  &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
@@ -68,7 +68,7 @@
 &trans          &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &kp A       &kp S       &kp D       &trans      &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans      &trans      &trans      &trans      &kp B       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans      &trans      &trans      &trans    &trans  &trans  &trans  &trans
+                                        &trans      &trans      &trans      &trans    &trans  &to 0   &trans  &trans
             >;
         };
 
