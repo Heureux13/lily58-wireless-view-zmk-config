@@ -41,11 +41,11 @@
 
         Base_Lower {
             bindings = <
-&kp F1            &kp F2                   &kp F3           &kp F4           &kp F5           &kp F6                                        &kp F7                 &kp F8           &kp F9          &kp F10      &kp F11          &kp F12
-&kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp KP_SUBTRACT        &kp BACKSPACE    &kp UP_ARROW    &kp DELETE   &none            &none
-&kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                                    &kp LEFT_PARENTHESIS   &kp LEFT         &kp DOWN_ARROW  &kp RIGHT    &none            &none
-&kp LG(V)         &none                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT  &to 3
-                                                            &kp LEFT_WIN     &kp LEFT_ALT     &kp LEFT_CONTROL  &trans           &trans     &kp RIGHT_CONTROL      &kp LEFT_ALT     &kp RIGHT_WIN
+&kp F1            &kp F2                   &kp F3           &kp F4           &kp F5           &kp F6                                  &kp F7                 &kp F8           &kp F9          &kp F10      &kp F11             &kp F12
+&kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                &kp KP_SUBTRACT        &kp BACKSPACE    &kp UP_ARROW    &kp DELETE   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
+&kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                              &kp LEFT_PARENTHESIS   &kp LEFT         &kp DOWN_ARROW  &kp RIGHT    &none               &none
+&kp LG(V)         &none                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X       &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 3
+                                                            &none            &none            &none       &trans           &trans     &none                  &none            &none
             >;
         };
 
