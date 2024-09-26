@@ -35,17 +35,27 @@
 &kp TAB    &kp Q   &kp W   &kp E             &kp R         &kp T                                                  &kp Y   &kp U              &kp I      &kp O    &kp P     &kp MINUS
 &kp CAPS   &kp A   &kp S   &kp D             &kp F         &kp G                                                  &kp H   &kp J              &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C             &kp V         &kp B   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 1   &kp ENTER               &kp SPACE              &mo 1   &kp RIGHT_CONTROL  &kp RGUI
+                           &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 1   &kp ENTER               &kp SPACE              &mo 2   &kp RIGHT_CONTROL  &kp RGUI
             >;
         };
 
         Base_Lower {
             bindings = <
 &kp F1            &kp F2                   &kp F3        &kp F4           &kp F5        &kp F6                                &kp F7                 &kp F8             &kp F9          &kp F10      &kp F11          &kp F12
-&kp LG(LA(LEFT))  &kp LA(LG(RIGHT_ARROW))  &kp N7        &kp N8           &kp N9        &Slash_0                              &kp KP_SUBTRACT        &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &none            &none
+&kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp N7        &kp N8           &kp N9        &Slash_0                              &kp KP_SUBTRACT        &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &none            &none
 &kp PRINTSCREEN   &none                    &kp NUMBER_4  &kp N5           &kp NUMBER_6  &kp N0                                &kp LEFT_PARENTHESIS   &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &none            &none
-&none             &none                    &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp X     &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT  &to 2
+&none             &none                    &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp X     &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT  &to 3
                                                          &kp KP_NUMBER_0  &kp PERIOD    &none     &kp LEFT_WIN     &kp SPACE  &none                  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+            >;
+        };
+
+        Base_Upper {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -56,7 +66,7 @@
 &kp TAB    &kp Q   &kp W   &kp E   &kp R                 &kp T                                        &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp CAPS   &kp A   &kp S   &kp D   &kp F                 &kp G                                        &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp V                 &kp B         &kp NUMBER_6        &kp RBKT   &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &mo 3   &kp LS(LEFT_CONTROL)  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 0   &kp BSPC  &kp RGUI
+                           &mo 4   &kp LS(LEFT_CONTROL)  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 0   &kp BSPC  &kp RGUI
             >;
         };
 
@@ -65,7 +75,7 @@
 &kp L           &kp LC(F1)        &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  &kp LC(F5)                    &trans  &trans  &trans  &trans  &trans  &none
 &kp I           &kp F1            &kp F2      &kp F3      &kp F4      &kp F5                        &trans  &trans  &trans  &trans  &trans  &none
 &trans          &kp NUMBER_6      &kp N7      &kp N8      &kp N9      &kp N0                        &trans  &trans  &trans  &trans  &trans  &none
-&kp LEFT_SHIFT  &kp LA(NUMBER_6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 4
+&kp LEFT_SHIFT  &kp LA(NUMBER_6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 5
                                               &trans      &trans      &trans      &trans    &trans  &none   &trans  &trans
             >;
         };
@@ -77,17 +87,7 @@
 &kp TAB    &kp Q   &kp W   &kp E             &kp R         &kp T                                                  &kp Y   &kp U              &kp I      &kp O    &kp P     &kp MINUS
 &kp CAPS   &kp A   &kp S   &kp D             &kp F         &kp G                                                  &kp H   &kp J              &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C             &kp V         &kp B   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                           &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5   &kp ENTER               &kp SPACE              &mo 1   &kp RIGHT_CONTROL  &kp RGUI
-            >;
-        };
-
-        Bluebeam_Lower {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                           &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 0   &kp ENTER               &kp SPACE              &mo 1   &kp RIGHT_CONTROL  &kp RGUI
             >;
         };
     };
