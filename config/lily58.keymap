@@ -29,7 +29,7 @@
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
-            display-name = "Base";
+            display-name = "Typing";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                                 &kp N6  &kp N7             &kp N8     &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E             &kp R         &kp T                                                  &kp Y   &kp U              &kp I      &kp O    &kp P     &kp MINUS
@@ -39,7 +39,7 @@
             >;
         };
 
-        Lower {
+        Base_Lower {
             bindings = <
 &kp F1            &kp F2                   &kp F3        &kp F4           &kp F5        &kp F6                                &kp F7                 &kp F8             &kp F9          &kp F10      &kp F11          &kp F12
 &kp LG(LA(LEFT))  &kp LA(LG(RIGHT_ARROW))  &kp N7        &kp N8           &kp N9        &Slash_0                              &kp KP_SUBTRACT        &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &none            &none
@@ -49,8 +49,8 @@
             >;
         };
 
-        layer_2 {
-            display-name = "2";
+        Starcraft_2 {
+            display-name = "SC2";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3  &kp N4                &kp N5                                       &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSPACE
 &kp TAB    &kp Q   &kp W   &kp E   &kp R                 &kp T                                        &kp Y   &kp U     &kp I      &kp O    &kp P     &kp MINUS
@@ -60,7 +60,7 @@
             >;
         };
 
-        Layer_3 {
+        Starcraft_2_Lower {
             bindings = <
 &kp ESCAPE      &kp LC(F1)    &kp LC(F2)  &kp LC(F3)  &kp LC(F4)  &kp LC(F5)                    &trans  &trans  &trans  &trans  &trans  &none
 &trans          &kp F1        &kp F2      &kp F3      &kp F4      &kp F5                        &trans  &trans  &trans  &trans  &trans  &none
