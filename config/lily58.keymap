@@ -72,11 +72,11 @@
 
         Starcraft_2_Lower {
             bindings = <
-&kp MINUS       &kp LC(F1)  &kp LC(F2)  &kp LC(F3)      &kp LC(F4)      &kp LC(F5)                                    &trans  &trans  &trans  &trans  &trans  &none
-&kp I           &none       &none       &kp LC(N8)      &kp LC(N7)      &kp LC(NUMBER_6)                              &trans  &trans  &trans  &trans  &trans  &none
-&kp SPACE       &none       &none       &kp N8          &kp N7          &kp NUMBER_6                                  &trans  &trans  &trans  &trans  &trans  &none
-&kp LEFT_SHIFT  &none       &none       &kp LA(LS(N8))  &kp LA(LS(N9))  &kp LA(LS(NUMBER_6))  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-                                        &trans          &trans          &trans                &kp LEFT_ALT    &trans  &none   &trans  &trans
+&kp MINUS       &kp LC(F1)   &kp LC(F2)   &kp LC(F3)      &kp LC(F4)      &kp LC(F5)                                &trans  &trans  &trans  &trans  &trans  &none
+&kp I           &kp LC(F6)   &kp LC(F7)   &kp LA(N8)      &kp LA(N7)      &kp LA(NUMBER_6)                          &trans  &trans  &trans  &trans  &trans  &none
+&kp SPACE       &kp LC(F8)   &kp LC(F9)   &kp N8          &kp N7          &kp NUMBER_6                              &trans  &trans  &trans  &trans  &trans  &none
+&kp LEFT_SHIFT  &kp LC(F10)  &kp LC(F11)  &kp LA(LS(N8))  &kp LA(LS(N9))  &kp LA(NUMBER_6)  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
+                                          &trans          &trans          &trans            &kp LEFT_ALT    &trans  &none   &trans  &trans
             >;
         };
 
