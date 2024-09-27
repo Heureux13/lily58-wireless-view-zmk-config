@@ -72,11 +72,11 @@
 
         Starcraft_2_Lower {
             bindings = <
-&kp MINUS       &none  &none       &none       &none             &none                                     &trans  &trans  &trans  &trans  &trans  &none
-&kp I           &none  &kp LA(N8)  &kp LA(N7)  &kp LA(NUMBER_6)  &kp LA(NUMBER_6)                          &trans  &trans  &trans  &trans  &trans  &none
-&kp SPACE       &none  &kp N8      &kp N7      &kp NUMBER_6      &kp NUMBER_6                              &trans  &trans  &trans  &trans  &trans  &none
-&kp LEFT_SHIFT  &none  &kp LS(N8)  &kp LS(N7)  &kp LS(NUMBER_6)  &kp LA(NUMBER_6)  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-                                   &trans      &trans            &trans            &kp LEFT_ALT    &trans  &none   &trans  &trans
+&kp MINUS       &none  &none       &none       &none             &none                              &trans  &trans  &trans  &trans  &trans  &none
+&none           &none  &kp LA(N8)  &kp LA(N7)  &kp LA(NUMBER_6)  &kp I                              &trans  &trans  &trans  &trans  &trans  &none
+&none           &none  &kp N8      &kp N7      &kp NUMBER_6      &kp SPACE                          &trans  &trans  &trans  &trans  &trans  &none
+&kp LEFT_SHIFT  &none  &kp LS(N8)  &kp LS(N7)  &kp LS(NUMBER_6)  &none      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
+                                   &trans      &trans            &trans     &kp LEFT_ALT    &trans  &none   &trans  &trans
             >;
         };
 
