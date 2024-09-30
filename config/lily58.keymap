@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -52,11 +53,11 @@
 
         Base_Upper {
             bindings = <
-&trans  &to 3   &to 0                   &to 12  &trans             &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                  &trans  &trans             &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(LG(LEFT_ARROW))  &trans  &kp LG(LC(RIGHT))  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                  &trans  &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans             &trans  &trans    &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2            &bt BT_SEL 3  &bt BT_SEL 4       &trans                    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
+&trans        &trans        &trans                  &trans        &trans             &trans                    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &trans        &kp LC(LG(LEFT_ARROW))  &trans        &kp LG(LC(RIGHT))  &trans                    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &trans        &trans                  &trans        &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans      &trans
+                                                    &trans        &trans             &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
