@@ -83,11 +83,11 @@
 
         Starcraft_Alt {
             bindings = <
-&kp LA(N1)  &kp LA(N2)  &kp LS(LA(N3))  &kp LS(LA(N4))  &kp LS(LA(N5))  &kp LS(LA(N6))                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB     &kp Q       &kp F6          &kp F7          &kp F8          &kp T                                 &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS    &kp F1      &kp F2          &kp F3          &kp F4          &kp F5                                &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&sk LSHFT   &kp Z       &kp X           &sl 6           &kp V           &kp B           &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                        &trans          &trans          &trans          &none      &trans     &none   &trans  &trans
+&kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &kp LA(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
+&kp TAB     &kp Q       &kp F6      &kp F7      &kp F8      &kp T                             &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
+&kp CAPS    &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
+&sk LSHFT   &kp Z       &kp X       &sl 6       &kp V       &kp B       &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                    &trans      &trans      &trans      &none      &trans     &none   &trans  &trans
             >;
         };
 
