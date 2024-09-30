@@ -67,27 +67,27 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp Y   &kp U     &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
 &kp CAPS        &kp A         &kp S         &kp D         &kp F   &kp G                                  &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE    &kp RBKT   &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &mo 5   &mo 8         &mo 4         &kp SPACE  &mo 0   &kp BSPC  &kp RGUI
+                                            &kp LEFT_ALT  &mo 10  &mo 8         &mo 4         &kp SPACE  &mo 0   &kp BSPC  &kp RGUI
             >;
         };
 
         StarCraft_2_Action {
             bindings = <
-&kp LC(F1)  &kp LC(NUMBER_2)  &kp LC(N3)    &kp LC(N4)  &kp LC(N5)    &kp LC(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB     &kp N5            &none         &none       &kp N7        &kp N8                            &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS    &kp NUMBER_4      &kp NUMBER_6  &none       &kp NUMBER_6  &kp N5                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&sk LSHFT   &none             &none         &sl 6       &sl 7         &kp N5      &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &trans      &trans        &trans      &none      &trans     &none   &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)    &kp LC(N4)  &kp LC(N5)    &kp LC(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
+&kp TAB           &kp N5            &none         &none       &kp N7        &kp N8                            &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
+&kp CAPS          &kp NUMBER_4      &kp NUMBER_6  &none       &kp NUMBER_6  &kp N5                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
+&sk LSHFT         &none             &none         &sl 6       &sl 7         &kp N5      &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                                  &trans      &trans        &trans      &none      &trans     &none   &trans  &trans
             >;
         };
 
-        Starcraft_2_Build {
+        Starcraft_Add {
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp N6                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB    &sk Q   &sk W   &sk E   &sk R   &sk T                         &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS   &sk A   &sk S   &sk D   &sk F   &sk G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&kp LSHFT  &sk Z   &sk X   &sk C   &sk V   &sk B   &sk ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                           &none   &none   &none   &none      &none      &none   &none   &none
+&kp LS(N1)  &kp LS(N2)        &kp LS(N3)        &kp LS(N4)  &kp LS(N5)        &kp LS(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
+&kp TAB     &kp LS(N5)        &none             &none       &kp LS(N7)        &kp LS(N8)                        &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
+&kp CAPS    &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &none       &kp LS(NUMBER_6)  &kp LS(N5)                        &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
+&sk LSHFT   &none             &none             &none       &none             &kp LS(N5)  &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                                &trans      &trans            &trans      &none      &trans     &none   &trans  &trans
             >;
         };
 
@@ -132,13 +132,13 @@
             >;
         };
 
-        Starcraft_Add {
+        Starcraft_2_Build {
             bindings = <
-&kp LS(N1)  &kp LS(N2)        &kp LS(N3)        &kp LS(N4)  &kp LS(N5)        &kp LS(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB     &kp LS(N5)        &none             &none       &kp LS(N7)        &kp LS(N8)                        &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS    &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &none       &kp LS(NUMBER_6)  &kp LS(N5)                        &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&sk LSHFT   &none             &none             &none       &none             &kp LS(N5)  &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                                &trans      &trans            &trans      &none      &trans     &none   &trans  &trans
+&kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp N6                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
+&kp TAB    &sk Q   &sk W   &sk E   &sk R   &sk T                         &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
+&kp CAPS   &sk A   &sk S   &sk D   &sk F   &sk G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
+&kp LSHFT  &sk Z   &sk X   &sk C   &sk V   &sk B   &sk ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                           &none   &none   &none   &none      &none      &none   &none   &none
             >;
         };
     };
