@@ -81,13 +81,13 @@
             >;
         };
 
-        Starcraft_Add {
+        Starcraft_Alt {
             bindings = <
-&kp LS(N1)  &kp LS(N2)        &kp LS(N3)        &kp LS(N4)  &kp LS(N5)        &kp LS(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB     &kp LS(N5)        &none             &none       &kp LS(N7)        &kp LS(N8)                        &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS    &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &none       &kp LS(NUMBER_6)  &kp LS(N5)                        &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&sk LSHFT   &none             &none             &none       &none             &kp LS(N5)  &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                                &trans      &trans            &trans      &none      &trans     &none   &trans  &trans
+&kp LA(N1)  &kp LA(N2)        &kp LS(LA(N3))    &kp LS(LA(N4))  &kp LS(LA(N5))    &kp LS(LA(N6))                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
+&kp TAB     &kp LS(N5)        &none             &none           &kp LS(N7)        &kp LS(N8)                            &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
+&kp CAPS    &kp LS(NUMBER_4)  &kp LS(NUMBER_6)  &none           &kp LS(NUMBER_6)  &kp LS(N5)                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
+&sk LSHFT   &none             &none             &none           &none             &kp LS(N5)      &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                                &trans          &trans            &trans          &none      &trans     &none   &trans  &trans
             >;
         };
 
