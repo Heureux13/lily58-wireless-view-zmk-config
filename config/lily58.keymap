@@ -68,7 +68,7 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R                 &kp T                                        &kp Y   &kp U     &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
 &kp CAPS        &kp A         &kp S         &kp D         &kp F                 &kp G                                        &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V                 &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 0   &kp BSPC  &kp RGUI
+                                            &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 4   &kp BSPC  &kp RGUI
             >;
         };
 
@@ -77,7 +77,7 @@
 &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)  &kp LC(N4)    &kp LC(N5)        &kp LC(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
 &kp TAB           &kp NUMBER_1      &kp N2      &kp N3        &kp N4            &kp N5                            &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
 &kp CAPS          &kp N6            &kp N7      &kp N8        &kp N9            &kp N0                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&kp LEFT_SHIFT    &sl 8             &sl 7       &sl 5         &sl 6             &sl 11      &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+&kp LEFT_SHIFT    &sl 8             &sl 7       &sl 5         &sl 6             &sl 11      &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &to 0
                                                 &kp LEFT_ALT  &kp LEFT_CONTROL  &trans      &none      &trans     &none   &trans  &trans
             >;
         };
