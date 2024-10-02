@@ -33,31 +33,31 @@
 
             display-name = "Base";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6                           &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp T                                  &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPS      &kp A         &kp S         &kp D         &kp F             &kp G                                  &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z         &kp X         &kp C         &kp V             &kp B         &kp ESCAPE    &kp DEL    &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                          &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1         &kp ENTER     &kp SPACE  &mo 1   &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                           &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &kp Q         &kp W         &kp E         &kp R   &kp T                                  &kp Y   &kp U              &kp I          &kp O    &kp LC(P)  &kp BACKSLASH
+&kp CAPS      &kp A         &kp S         &kp D         &kp F   &kp G                                  &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE    &kp DEL    &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                          &kp LEFT_ALT  &mo 2   &mo 1         &kp ENTER     &kp SPACE  &mo 1   &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
         Base_Lower {
             bindings = <
-&kp F1            &kp F2                   &kp F3           &kp F4           &kp F5            &kp F6                                  &kp F7                 &kp F8             &kp F9          &kp F10      &kp F11             &kp F12
-&kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &Slash_0                                &kp KP_SUBTRACT        &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
-&kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp PERIOD                              &kp LEFT_PARENTHESIS   &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &none               &to 12
-&kp LG(V)         &kp EQUAL                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 2
-                                                            &kp LEFT_ALT     &kp LEFT_CONTROL  &none       &trans           &trans     &none                  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp F1            &kp F2                   &kp F3           &kp F4           &kp F5           &kp F6                                  &kp F7                 &kp F8             &kp F9          &kp F10      &kp F11             &kp F12
+&kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                &kp KP_SUBTRACT        &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
+&kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                              &kp LEFT_PARENTHESIS   &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &none               &none
+&kp LG(V)         &kp EQUAL                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X       &kp BACKSPACE    &mkp LCLK  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 14
+                                                            &kp LEFT_ALT     &mo 2            &none       &trans           &trans     &none                  &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
-        Base_Upper {
+        Base_Control {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &trans                    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
-&trans        &trans        &trans        &trans        &trans             &trans                    &trans  &trans  &trans  &trans  &trans      &trans
-&trans        &to 12        &tog 3        &trans        &kp LG(LC(RIGHT))  &trans                    &trans  &trans  &trans  &trans  &trans      &trans
-&trans        &trans        &trans        &trans        &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans      &to 0
-                                          &trans        &trans             &trans  &trans    &trans  &trans  &trans  &trans
+&kp N1        &kp N2         &kp N3  &kp N4     &kp LC(N5)  &kp N6                    &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS  &kp BSPC
+&kp LC(LEFT)  &kp LC(RIGHT)  &kp W   &kp E      &kp R       &kp T                     &kp Y   &kp U   &kp I   &kp O      &kp LC(P)  &kp BSLH
+&kp CAPS      &kp LC(LS(A))  &kp S   &kp D      &kp F       &kp G                     &kp H   &kp J   &kp K   &kp L      &kp SEMI   &kp APOS
+&kp LG(V)     &kp Z          &kp X   &kp LC(C)  &kp LC(V)   &kp B   &trans    &trans  &kp B   &kp N   &kp M   &kp COMMA  &kp DOT    &kp RSHFT
+                                     &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
@@ -171,6 +171,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Layers {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                    &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT
+&trans        &trans        &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &none         &none         &trans        &none         &trans                    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans      &none
+                                          &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
