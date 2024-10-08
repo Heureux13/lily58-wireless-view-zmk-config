@@ -54,7 +54,7 @@
             bindings = <
 &kp N1          &kp N2         &kp N3         &kp N4  &kp N5         &kp N6                    &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS  &kp HOME
 &kp LC(LEFT)    &kp LC(RIGHT)  &kp W          &kp E   &kp R          &kp T                     &kp Y   &kp U   &kp I   &kp O      &kp P      &kp PAGE_UP
-&kp CAPSLOCK    &kp LC(LA(A))  &kp LC(LA(S))  &kp D   &kp LC(LS(M))  &kp G                     &kp H   &kp J   &kp K   &kp L      &kp SEMI   &kp PAGE_DOWN
+&kp CAPSLOCK    &kp LC(LA(A))  &kp LC(LA(X))  &kp D   &kp LC(LS(M))  &kp G                     &kp H   &kp J   &kp K   &kp L      &kp SEMI   &kp PAGE_DOWN
 &kp LEFT_SHIFT  &kp Z          &kp X          &kp C   &kp LG(V)      &kp B   &trans    &trans  &kp B   &kp N   &kp M   &kp COMMA  &kp DOT    &kp END
                                               &trans  &trans         &trans  &trans    &trans  &trans  &trans  &trans
             >;
