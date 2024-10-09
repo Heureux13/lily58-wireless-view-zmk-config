@@ -40,17 +40,17 @@
             >;
         };
 
-        Base_Lower {
+        Base_1 {
             bindings = <
 &kp F1            &kp F2                   &kp F3           &kp F4           &kp F5            &kp F6                                  &kp F7                &kp F8             &kp F9          &kp F10      &kp F11             &kp F12
 &kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &Slash_0                                &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
 &kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp PERIOD                              &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &none               &none
-&sl 2             &kp MINUS                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 8
+&sl 2             &kp MINUS                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 5
                                                             &kp LEFT_ALT     &kp LEFT_CONTROL  &none       &trans           &trans     &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
-        Base_Control {
+        Base_2 {
             bindings = <
 &kp N1          &kp N2         &kp N3         &kp N4  &kp N5         &kp N6                    &kp N7  &kp N8  &kp N9  &kp N0     &kp MINUS  &kp HOME
 &kp LC(LEFT)    &kp LC(RIGHT)  &kp W          &kp E   &kp R          &kp T                     &kp Y   &kp U   &kp I   &kp O      &kp P      &kp PAGE_UP
@@ -63,84 +63,32 @@
         Starcraft {
             display-name = "SC2";
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                 &kp N7  &kp N8    &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                        &kp Y   &kp U     &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                        &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &mo 4   &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 5   &kp BSPC  &kp RGUI
-            >;
-        };
-
-        Starcraft_level_1 {
-            bindings = <
-&trans        &trans  &trans  &trans  &trans                &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp CAPSLOCK  &trans  &trans  &trans  &trans                &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans                &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &kp LC(LS(NUMBER_6))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans                &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        Starcraft_Groups {
-            bindings = <
-&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(N3)  &kp LC(N4)    &kp LC(N5)        &kp LC(N6)                        &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BSPC
-&kp TAB           &kp NUMBER_1      &kp N2      &kp N3        &kp N4            &kp N5                            &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BSLH
-&kp CAPS          &kp N6            &kp N7      &kp N8        &kp N9            &kp N0                            &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp APOS
-&kp LEFT_SHIFT    &sl 0             &sl 0       &sl 0         &sl 0             &sl 0       &kp ESC    &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &to 0
-                                                &kp LEFT_ALT  &kp LEFT_CONTROL  &trans      &none      &trans     &none   &trans  &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                 &kp N7  &kp N8             &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                        &kp Y   &kp U              &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
+&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                        &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &mo 5   &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 5   &kp RIGHT_CONTROL  &kp RGUI
             >;
         };
 
         Shooters {
             display-name = "Pew Pew";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6                               &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T                                      &kp Y   &kp U              &kp I          &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp CAPS      &kp A         &kp S         &kp D         &kp F         &kp G                                      &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                          &mo 7         &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE     &kp SPACE  &mo 7   &kp RIGHT_CONTROL  &kp RIGHT_ALT
-            >;
-        };
-
-        Shooter_Lower {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                               &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &kp Q         &kp W         &kp E         &kp R   &kp T                                      &kp Y   &kp U              &kp I          &kp O    &kp P      &kp NON_US_BACKSLASH
+&kp CAPS      &kp A         &kp S         &kp D         &kp F   &kp G                                      &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &kp Z         &kp X         &kp C         &kp V   &kp B             &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                          &kp LEFT_ALT  &mo 5   &kp LEFT_CONTROL  &kp SPACE     &kp SPACE  &mo 5   &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
         Layers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&to 3   &to 6   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&to 3   &to 4   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        SC3 {
-            display-name = "Testing";
-            bindings = <
-&none      &none  &kp N7        &kp N8        &kp N9        &kp N0                                  &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB    &kp Q  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp S                                   &kp Y   &kp U              &kp I          &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp CAPS   &kp A  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp G                                   &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X         &kp C         &kp V         &tog 10  &kp ESCAPE          &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                &mo 7         &none         &tog 10  &kp LEFT_CONTROL    &kp SPACE  &mo 7   &kp RIGHT_CONTROL  &kp RIGHT_ALT
-            >;
-        };
-
-        testing_2 {
-            display-name = "SC2";
-            bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                 &kp N7  &kp N8    &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                        &kp Y   &kp U     &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                        &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &mo 4   &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 5   &kp BSPC  &kp RGUI
             >;
         };
     };
