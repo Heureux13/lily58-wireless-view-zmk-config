@@ -46,7 +46,7 @@
 &kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &Slash_0                                &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
 &kp PRINTSCREEN   &kp KP_NUMBER_0          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp PERIOD                              &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &none               &none
 &sl 2             &kp MINUS                &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT     &to 5
-                                                            &kp LEFT_ALT     &kp LEFT_CONTROL  &none       &trans           &trans     &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
+                                                            &kp LEFT_ALT     &kp LEFT_CONTROL  &none       &trans           &kp ENTER  &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
