@@ -30,7 +30,7 @@
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
-            display-name = "Base";
+            display-name = "Work";
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6                           &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T                                  &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
@@ -61,13 +61,13 @@
         };
 
         Starcraft {
-            display-name = "SC2";
+            display-name = "Base";
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                 &kp N7  &kp N8             &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                        &kp Y   &kp U              &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                        &kp H   &kp J              &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M              &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &mo 5   &kp LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &mo 5   &kp RIGHT_CONTROL  &kp RGUI
+&kp T  &kp Y  &kp N7  &kp N8                &kp N9    &kp N0                              &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp Q  &kp W  &kp E   &kp R                 &kp N5    &kp N6                              &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp A  &kp S  &kp D   &kp F                 &kp N3    &kp N4                              &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Z  &kp X  &kp C   &kp V                 &kp N1    &kp N2     &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                      &kp LS(LC(LEFT_ALT))  &kp LALT  &kp LCTRL  &kp LSHFT     &kp SPACE  &mo 0   &kp RIGHT_CONTROL  &kp RIGHT_WIN
             >;
         };
 
@@ -85,31 +85,10 @@
         Layers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&to 3   &to 4   &to 6   &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&to 3   &to 4   &none   &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        The_Core {
-            bindings = <
-&kp N5  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp T   &kp Y   &kp U   &kp I      &kp O     &kp P                            &trans  &trans  &trans  &trans  &trans  &trans
-&kp G   &kp H   &kp J   &kp K      &kp L     &kp SEMI                         &trans  &trans  &trans  &trans  &trans  &trans
-&kp B   &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH   &kp ESCAPE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &mo 5      &kp LALT  &kp LSHFT  &kp LCTRL     &trans  &trans  &trans  &trans
-            >;
-        };
-
-        Starcraft2 {
-            display-name = "Base";
-            bindings = <
-&kp T  &kp Y  &kp N7  &kp N8        &kp N9    &kp N0                              &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp Q  &kp W  &kp E   &kp R         &kp N5    &kp N6                              &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp A  &kp S  &kp D   &kp F         &kp N3    &kp N4                              &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Z  &kp X  &kp C   &kp V         &kp N1    &kp N2     &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                      &kp LEFT_ALT  &kp LALT  &kp LCTRL  &kp LSHFT     &kp SPACE  &to 5   &kp RIGHT_CONTROL  &kp RIGHT_WIN
             >;
         };
     };
