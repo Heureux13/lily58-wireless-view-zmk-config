@@ -101,6 +101,17 @@
                         &mo 5      &kp LALT  &kp LSHFT  &kp LCTRL     &trans  &trans  &trans  &trans
             >;
         };
+
+        Starcraft2 {
+            display-name = "Base";
+            bindings = <
+&kp R           &kp T  &kp N7  &kp N8        &kp N9  &kp N0                             &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q  &kp W   &kp E         &kp N5  &kp N6                             &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A  &kp S   &kp D         &kp N3  &kp N4                             &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X   &kp C         &kp N1  &kp N2    &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                               &kp LEFT_ALT  &mo 0   &kp LALT  &kp LCTRL     &kp SPACE  &to 5   &kp RIGHT_CONTROL  &kp RIGHT_WIN
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
