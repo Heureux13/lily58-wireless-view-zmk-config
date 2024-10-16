@@ -17,6 +17,20 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kt LEFT_ALT>;
             label = "SLASH_0";
         };
+
+        GG: GG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp W &kp P &kp G &kp G &kp ENTER &kp F10 &kp N>;
+            label = "GG";
+        };
+
+        GL_HF: GL_HF {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp G &kp L &kp H &kp F &kp ENTER>;
+            label = "GL_HF";
+        };
     };
 
     keymap {
@@ -63,11 +77,11 @@
         Starcraft {
             display-name = "SC2";
             bindings = <
-&kp T  &kp Y  &kp N7  &kp N8                &kp N9    &kp N0                              &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp Q  &kp W  &kp E   &kp R                 &kp N5    &kp N6                              &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp A  &kp S  &kp D   &kp F                 &kp N3    &kp N4                              &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Z  &kp X  &kp C   &kp V                 &kp N1    &kp N2     &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                      &kp LS(LC(LEFT_ALT))  &kp LALT  &kp LCTRL  &kp LSHFT     &kp SPACE  &mo 0   &kp RIGHT_CONTROL  &kp RIGHT_WIN
+&kp Y      &kp U  &kp N7  &kp N8  &kp N9            &kp N0                             &GG    &kp N8             &kp N9         &kp N0   &kp MINUS  &GL_HF
+&kp T      &kp Q  &kp W   &kp E   &kp N5            &kp N6                             &kp Y  &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp F      &kp A  &kp S   &kp D   &kp N3            &kp N4                             &kp H  &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X   &kp C   &kp N1            &kp N2    &kp ESCAPE    &kp ENTER  &kp N  &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                          &mo 0   &kp LS(LC(LALT))  &kp LALT  &kp LCTRL     &kp SPACE  &mo 0  &kp RIGHT_CONTROL  &kp RIGHT_WIN
             >;
         };
 
