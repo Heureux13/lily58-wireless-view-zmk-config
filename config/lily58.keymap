@@ -21,14 +21,14 @@
         GG: GG {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kp W &kp P &kp G &kp G &kp ENTER &kp F10 &kp N>;
+            bindings = <&kp ENTER &kp LS(W) &kp LS(P) &kp SPACE &kp LS(G) &kp LS(G) &kp ENTER &kp F10 &kp N>;
             label = "GG";
         };
 
         GL_HF: GL_HF {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kp G &kp L &kp H &kp F &kp ENTER>;
+            bindings = <&kp ENTER &kp LS(G) &kp LS(L) &kp SPACE &kp LS(H) &kp LS(F) &kp ENTER>;
             label = "GL_HF";
         };
     };
@@ -74,14 +74,14 @@
             >;
         };
 
-        Starcraft {
+        Starcraft_2 {
             display-name = "SC2";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp N7  &kp N8  &kp N9            &kp N0                             &GL_HF  &kp N8             &kp N9         &kp N0   &kp MINUS  &GG
-&kp TAB       &kp Q         &kp W   &kp E   &kp N5            &kp N6                             &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPS      &kp A         &kp S   &kp D   &kp N3            &kp N4                             &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z         &kp X   &kp C   &kp V             &kp B     &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &to 0
-                                    &mo 0   &kp LS(LC(LALT))  &kp LALT  &kp LCTRL     &kp SPACE  &mo 0   &kp RIGHT_CONTROL  &kp RIGHT_WIN
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5            &kp NUMBER_6                                 &GL_HF  &kp N8             &kp N9         &kp N0   &kp MINUS  &GG
+&kp TAB         &kp Q         &kp W         &kp E         &kp R             &kp T                                        &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F             &kp G                                        &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V             &kp B         &kp ESCAPE          &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &kp LEFT_CONTROL  &kt LEFT_ALT  &kp LEFT_CONTROL    &kp SPACE  &to 0   &kp RIGHT_CONTROL  &kp RIGHT_WIN
             >;
         };
 
