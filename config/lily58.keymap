@@ -59,7 +59,7 @@
 &kp F1           &kp F2           &kp F3           &kp F4           &kp F5            &kp F6                                  &kp F7                &kp F8             &kp F9          &kp F10      &kp F11                &kp F12
 &kp PAGE_UP      &kp PAGE_DOWN    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &Slash_0                                &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &none                  &none
 &kp PRINTSCREEN  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp PERIOD                              &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &kp RIGHT_PARENTHESIS  &none
-&sl 2            &kp MINUS        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT        &to 5
+&sl 2            &kp MINUS        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp X       &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT        &to 6
                                                    &kp LEFT_ALT     &kp LEFT_CONTROL  &none       &trans           &kp ENTER  &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
@@ -85,6 +85,17 @@
             >;
         };
 
+        Core {
+            display-name = "SC2";
+            bindings = <
+&kp N1          &kp N2  &kp N3  &kp N4         &kp N5        &kp N6                                         &kp N7  &kp N8             &kp N9         &kp N0   &kp MINUS  &GG
+&kp TAB         &kp Q   &kp W   &kp E          &kp R         &kp T                                          &kp Y   &kp U              &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A   &kp S   &kp D          &kp F         &kp G                                          &kp H   &kp J              &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C          &kp V         &kp B             &kp ESCAPE        &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                &kp LS(LC(V))  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp SPACE  &to 0   &kp RIGHT_CONTROL  &kp RIGHT_WIN
+            >;
+        };
+
         Shooters {
             display-name = "DRG";
             bindings = <
@@ -92,14 +103,14 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                      &kp Y   &kp U              &kp I          &kp O    &kp P     &kp NON_US_BACKSLASH
 &kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G                                      &kp H   &kp J              &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B             &kp ESCAPE    &kp ENTER  &kp N   &kp M              &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                                            &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE     &kp SPACE  &mo 5   &kp RIGHT_CONTROL  &kp RIGHT_ALT
+                                            &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE     &kp SPACE  &mo 6   &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
         Layers {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&to 3   &to 4   &none   &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&to 3   &to 5   &none   &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
