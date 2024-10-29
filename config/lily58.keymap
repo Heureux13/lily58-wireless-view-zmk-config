@@ -78,29 +78,29 @@
 &kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &kp F6                                        &kp F7                &kp F8             &kp F9          &kp F10      &kp F11                 &kp F12
 &kp PAGE_UP      &kp PAGE_DOWN    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT))
 &kp PRINTSCREEN  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                                    &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &kp RIGHT_PARENTHESIS   &none
-&sl 2            &kp MINUS        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &to 4
+&mo 2            &kp MINUS        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &to 4
                                                    &kp LEFT_ALT     &none            &kp LEFT_CONTROL  &none            &kp ENTER  &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
         Base_2 {
             bindings = <
-&kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp N3         &kp LA(F4)     &kp N5         &kp N6                             &kp N7  &kp N8  &kp N9  &kp N0     &Copy_4   &kp HOME
-&kp LG(LC(LEFT))    &kp LG(LC(RIGHT))   &kp W          &kp LC(LS(L))  &kp R          &kp LC(LA(LS(T)))                  &kp Y   &kp U   &kp I   &kp O      &Copy_5   &kp PAGE_UP
-&kp CAPSLOCK        &kp A               &kp LC(LA(S))  &kp DELETE     &kp LC(LS(M))  &kp G                              &kp H   &kp J   &kp K   &kp L      &kp SEMI  &kp PAGE_DOWN
-&kp LEFT_SHIFT      &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp B              &none    &none  &kp B   &kp N   &kp M   &kp COMMA  &none     &kp END
-                                                       &none          &none          &none              &none    &none  &none   &none   &none
+&kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp N3         &kp LA(F4)     &kp N5         &kp N6                  &kp N7  &kp N8  &kp N9  &kp N0     &Copy_4   &kp HOME
+&kp LG(LC(LEFT))    &kp LG(LC(RIGHT))   &kp W          &kp LC(LS(L))  &kp R          &kp T                   &kp Y   &kp U   &kp I   &kp O      &Copy_5   &kp PAGE_UP
+&kp CAPSLOCK        &kp A               &kp LC(LA(S))  &kp DELETE     &kp LC(LS(M))  &kp G                   &kp H   &kp J   &kp K   &kp L      &kp SEMI  &kp PAGE_DOWN
+&kp LEFT_SHIFT      &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp B   &none    &none  &kp B   &kp N   &kp M   &kp COMMA  &none     &kp END
+                                                       &none          &none          &none   &none    &none  &none   &none   &none
             >;
         };
 
         Starcraft {
             display-name = "SC2";
             bindings = <
-&kp N1        &kp N2       &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                       &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A        &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                       &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z        &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                        &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &mo 4   &GL_HF  &GG
+&kp N1        &kp N2               &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &mt LA(LS(LC(Q))) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                       &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK  &kp A                &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                       &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
+&kp Y         &kp Z                &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                                                &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &mo 4   &GL_HF  &GG
             >;
         };
 
