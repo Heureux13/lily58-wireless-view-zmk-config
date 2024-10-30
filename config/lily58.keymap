@@ -121,21 +121,21 @@
         Starcraft {
             display-name = "SC2";
             bindings = <
-&kp N1        &kp N2               &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                             &kp N7  &kp N8  &kp N9     &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt LA(LS(LC(Q))) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                     &kp Y   &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A                &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                     &kp H   &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z                &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE      &kp ENTER  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                                                &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &Control_Backspace   &Shift_Space    &kp SPACE  &mo 4   &GL_HF  &GG
+&kp N1        &kp N2               &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                             &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &mt LA(LS(LC(Q))) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                     &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK  &kp A                &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                     &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Y         &kp Z                &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE      &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                                &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &Control_Backspace   &Shift_Space    &kp SPACE  &kp RIGHT_CONTROL  &mo 4   &kp RIGHT_ALT
             >;
         };
 
         Layers {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&to 3  &to 3  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &to 0
-                     &none  &none  &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
+&to 3  &to 3  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &to 0
+                     &none  &none  &none  &none    &none  &none   &none  &none
             >;
         };
     };
