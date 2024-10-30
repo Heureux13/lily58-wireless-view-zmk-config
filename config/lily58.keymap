@@ -11,7 +11,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -60,6 +60,13 @@
             bindings = <&mo 1>, <&to 1>;
 
             tapping-term-ms = <200>;
+        };
+
+        Control_Space: Control_Space {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CONTROL_SPACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL>, <&kp SPACE>;
         };
     };
 
