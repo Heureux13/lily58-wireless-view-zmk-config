@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "L1MO_L1TO";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 2>;
+            bindings = <&mo 1>, <&to 1>;
 
             tapping-term-ms = <200>;
         };
@@ -66,7 +66,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BASE_SC2";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 1>;
+            bindings = <&to 0>, <&to 3>;
         };
 
         Control_Backspace: Control_Backspace {
@@ -94,18 +94,7 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R       &kp T                                      &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
 &kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F       &kp G                                      &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V       &kp B             &kp ESCAPE    &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &L1mo_L1to  &kp LEFT_CONTROL  &kp ENTER     &kp SPACE  &kp RIGHT_CONTROL  &mo 2   &kp RIGHT_WIN
-            >;
-        };
-
-        Starcraft {
-            display-name = "SC2";
-            bindings = <
-&kp N1        &kp N2   &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt L Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A    &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z    &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                    &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 2   &kp RIGHT_ALT
+                                            &kp LEFT_ALT  &L1mo_L1to  &kp LEFT_CONTROL  &kp ENTER     &kp SPACE  &kp RIGHT_CONTROL  &mo 1   &kp RIGHT_WIN
             >;
         };
 
@@ -114,7 +103,7 @@
 &kp F1                    &kp F2                       &kp F3           &kp F4           &kp F5           &kp F6                                        &kp F7                &kp F8             &kp F9          &kp F10      &kp F11                 &kp F12
 &mt LG(LC(LEFT)) PAGE_UP  &mt LC(LG(RIGHT)) PAGE_DOWN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT))
 &kp PRINTSCREEN           &kp KP_NUMBER_0              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                                    &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &kp RIGHT_PARENTHESIS   &none
-&mo 3                     &kp MINUS                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &Base_SC2
+&mo 2                     &kp MINUS                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &Base_SC2
                                                                         &kp LEFT_ALT     &to 0            &kp LEFT_CONTROL  &kp ENTER        &kp ENTER  &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
@@ -126,6 +115,27 @@
 &kp CAPSLOCK        &kp A               &kp LC(LA(S))  &kp DELETE     &kp LC(LS(M))  &kp G                   &kp H   &kp J   &kp K   &kp L      &kp SEMI  &kp PAGE_DOWN
 &kp LEFT_SHIFT      &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp B   &none    &none  &kp B   &kp N   &kp M   &kp COMMA  &none     &kp END
                                                        &none          &none          &none   &none    &none  &none   &none   &none
+            >;
+        };
+
+        Starcraft {
+            display-name = "SC2";
+            bindings = <
+&kp N1        &kp N2   &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &mt L Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK  &kp A    &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Y         &kp Z    &mt LA(X) X  &kp C                 &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                    &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 4   &kp RIGHT_ALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
+&none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &Base_SC2
+                     &none  &none  &none  &none    &none  &none   &none  &none
             >;
         };
     };
