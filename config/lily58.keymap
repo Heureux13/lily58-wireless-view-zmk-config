@@ -141,7 +141,7 @@
 &none  &none  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &Base_SC2
+&none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &to 0
                      &none  &none  &none  &none    &none  &none   &none  &none
             >;
         };
