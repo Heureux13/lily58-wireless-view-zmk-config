@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "L1MO_L1TO";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&to 1>;
+            bindings = <&mo 3>, <&to 3>;
 
             tapping-term-ms = <200>;
         };
@@ -66,7 +66,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BASE_SC2";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 3>;
+            bindings = <&to 0>, <&to 1>;
         };
 
         Control_Backspace: Control_Backspace {
@@ -97,25 +97,47 @@
 
             display-name = "Home";
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5      &kp NUMBER_6                                       &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R       &kp T                                              &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F       &kp G                                              &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V       &kp B             &kp ESCAPE     &kp ENTER         &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &L1mo_L1to  &kp LEFT_CONTROL  &lt 1 ENTER    &mt DELETE SPACE  &kp RIGHT_CONTROL  &mo 1   &kp RIGHT_WIN
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                       &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                              &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                              &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &kp ESCAPE     &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &mo 4   &kp LEFT_CONTROL  &lt 3 ENTER    &lt 3 SPACE       &kp RIGHT_CONTROL  &mo 4   &kp RIGHT_WIN
             >;
         };
 
-        Base_1 {
+        Starcraft {
+            display-name = "RTS";
+            bindings = <
+&kp N1        &kp N2       &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                                            &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                                    &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK  &kp A        &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                                    &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Y         &kp Z        &mt LA(X) X  &kp C                 &kp V          &mt K B                     &kp ESCAPE              &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                        &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &mt LEFT_CONTROL BACKSPACE  &mt LEFT_SHIFT SPACE    &kp SPACE  &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_ALT
+            >;
+        };
+
+        Shooters {
+            display-name = "Pew Pew";
+            bindings = <
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                      &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                             &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                             &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &kp ESCAPE    &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &mo 3   &kp LEFT_CONTROL  &kp SPACE     &kp SPACE         &kp RIGHT_CONTROL  &mo 3   &kp RIGHT_WIN
+            >;
+        };
+
+        Secondary {
             bindings = <
 &kp F1                    &kp F2                       &kp F3           &kp F4           &kp F5           &kp F6                                        &kp F7                &kp F8             &kp F9          &kp F10      &kp F11                 &kp F12
 &mt LG(LC(LEFT)) PAGE_UP  &mt LC(LG(RIGHT)) PAGE_DOWN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp KP_SUBTRACT       &kp BACKSPACE      &kp UP_ARROW    &kp DELETE   &kp RG(RC(LEFT_ARROW))  &kp RG(RC(RIGHT))
 &kp PRINTSCREEN           &kp KP_NUMBER_0              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                                    &kp LEFT_PARENTHESIS  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT    &kp RIGHT_PARENTHESIS   &none
-&mo 2                     &kp MINUS                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &Base_SC2
+&mo 4                     &kp MINUS                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &mkp LCLK  &kp EQUAL             &kp KP_MULTIPLY    &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT         &to 5
                                                                         &kp LEFT_ALT     &to 0            &kp LEFT_CONTROL  &kp ENTER        &kp ENTER  &none                 &kp RIGHT_CONTROL  &kp RIGHT_ALT
             >;
         };
 
-        Base_2 {
+        Bluebeam {
             bindings = <
 &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp N3         &kp LA(F4)     &kp N5         &kp N6                  &kp N7  &kp N8  &kp N9  &kp N0     &Copy_4   &kp HOME
 &none               &none               &kp W          &kp LC(LS(L))  &kp R          &kp T                   &kp Y   &kp U   &kp I   &kp O      &Copy_5   &kp PAGE_UP
@@ -125,18 +147,7 @@
             >;
         };
 
-        Starcraft {
-            display-name = "SC2";
-            bindings = <
-&kp N1        &kp N2       &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                                            &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                                    &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A        &mt LA(S) S  &kp D                 &mt LA(F) F    &mt LA(G) G                                                    &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z        &mt LA(X) X  &kp C                 &kp V          &mt K B                     &kp ESCAPE              &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                        &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &mt LEFT_CONTROL BACKSPACE  &mt LEFT_SHIFT SPACE    &kp SPACE  &kp RIGHT_CONTROL  &mo 4   &kp RIGHT_ALT
-            >;
-        };
-
-        layer_4 {
+        Layers {
             bindings = <
 &none  &none  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
