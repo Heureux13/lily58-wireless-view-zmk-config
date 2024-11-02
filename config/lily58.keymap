@@ -110,11 +110,11 @@
         Starcraft {
             display-name = "RTS";
             bindings = <
-&kp N1        &kp N2       &kp N3       &kp N4                &mt LA(N5) N5  &mt LA(N6) NUMBER_6                             &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E                 &mt LA(R) R    &mt LA(T) T                                     &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A        &kp S        &kp D                 &kp F          &mt LA(G) G                                     &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z        &mt LA(X) X  &kp C                 &mt LA(V) V    &mt LA(B) B          &kp ESCAPE      &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                        &kp LS(LC(LEFT_ALT))  &kp LEFT_ALT   &Control_Backspace   &Shift_Space    &kp SPACE  &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_ALT
+&kp N1        &kp N2       &kp N3       &kp N4     &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E      &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK  &kp A        &mt S LA(S)  &kp D      &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Y         &kp Z        &mt LA(X) X  &kp C      &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                        &kp SPACE  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_ALT
             >;
         };
 
@@ -144,14 +144,14 @@
 &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp N3         &kp LA(F4)     &kp N5         &kp N6                  &kp HOME  &kp N8  &kp N9  &kp N0     &Copy_4   &none
 &none               &none               &kp W          &kp LC(LS(L))  &kp R          &kp T                   &kp END   &kp U   &kp I   &kp O      &Copy_5   &none
 &kp CAPSLOCK        &kp A               &kp LC(LA(S))  &kp DELETE     &kp LC(LS(M))  &kp G                   &kp H     &kp J   &kp K   &kp L      &kp SEMI  &none
-&kp LEFT_SHIFT      &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp B   &none    &none  &kp B     &kp N   &kp M   &kp COMMA  &none     &none
+&kp LEFT_SHIFT      &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp B   &none    &none  &kp B     &kp N   &kp M   &kp COMMA  &none     &to 5
                                                        &none          &none          &none   &none    &none  &none     &none   &none
             >;
         };
 
         Layers {
             bindings = <
-&to 1  &to 2  &none  &none  &none  &none                  &GL_HF  &none  &none  &to 0  &none  &GG
+&to 1  &to 2  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &to 0
