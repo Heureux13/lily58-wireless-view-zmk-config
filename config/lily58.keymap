@@ -53,11 +53,11 @@
     };
 
     behaviors {
-        L1mo_L1to: L1mo_L1to {
+        mo3_to5: mo3_to5 {
             compatible = "zmk,behavior-tap-dance";
-            label = "L1MO_L1TO";
+            label = "MO3_TO5";
             #binding-cells = <0>;
-            bindings = <&mo 3>, <&to 3>;
+            bindings = <&mo 3>, <&to 5>;
 
             tapping-term-ms = <200>;
         };
@@ -151,7 +151,7 @@
 
         Layers {
             bindings = <
-&to 1  &to 2  &none  &none  &none  &none                  &GL_HF  &none  &none  &none  &none  &GG
+&to 1  &to 2  &none  &none  &none  &none                  &GL_HF  &none  &none  &to 0  &none  &GG
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &to 0
