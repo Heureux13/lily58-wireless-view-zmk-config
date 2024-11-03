@@ -62,11 +62,13 @@
             tapping-term-ms = <200>;
         };
 
-        Base_SC2: Base_SC2 {
+        ESC_SPACE: ESC_SPACE {
             compatible = "zmk,behavior-tap-dance";
-            label = "BASE_SC2";
+            label = "ESC_SPACE";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 1>;
+            bindings = <&kp ESCAPE>, <&kp SPACE>;
+
+            tapping-term-ms = <100>;
         };
 
         Control_Backspace: Control_Backspace {
@@ -113,7 +115,7 @@
 &kp N1        &kp N2       &kp N3       &kp N4     &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
 &kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E      &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
 &kp CAPSLOCK  &kp A        &mt LA(S) S  &kp D      &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z        &mt LA(X) X  &kp C      &kp V          &kp B                &kp ESCAPE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+&kp Y         &kp Z        &mt LA(X) X  &kp C      &kp V          &kp B                &ESC_SPACE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
                                         &kp SPACE  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_ALT
             >;
         };
@@ -121,11 +123,11 @@
         Shooters {
             display-name = "Pew Pew";
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                      &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                             &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                             &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &kp ESCAPE    &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                            &kp LEFT_ALT  &mo 3   &kp LEFT_CONTROL  &kp SPACE     &kp SPACE         &kp RIGHT_CONTROL  &mo 3   &kp RIGHT_WIN
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                            &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                                   &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                                   &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &mt ENTER ESCAPE    &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &mo 3   &kp LEFT_CONTROL  &kp SPACE           &kp SPACE         &kp RIGHT_CONTROL  &mo 3   &kp RIGHT_WIN
             >;
         };
 
