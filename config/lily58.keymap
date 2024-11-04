@@ -11,7 +11,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <300>;
 };
 
 / {
@@ -68,7 +68,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE>, <&kp SPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         Control_Backspace: Control_Backspace {
