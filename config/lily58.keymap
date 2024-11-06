@@ -53,11 +53,11 @@
     };
 
     behaviors {
-        mo3_to5: mo3_to5 {
+        CpsLk_to6: CpsLk_to6 {
             compatible = "zmk,behavior-tap-dance";
-            label = "MO3_TO5";
+            label = "CPSLK_TO6";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 6>;
+            bindings = <&kp CAPSLOCK>, <&none>, <&none>, <&to 6>;
 
             tapping-term-ms = <200>;
         };
@@ -114,7 +114,7 @@
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp N5   &kp NUMBER_6                                             &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
 &kp TAB         &mt P Q          &mt O W       &mt I E       &mt U R  &mt Y T                                                  &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK    &mt SEMICOLON A  &mt L S       &mt K D       &mt J F  &mt H G                                                  &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&CpsLk_to6      &mt SEMICOLON A  &mt L S       &mt K D       &mt J F  &mt H G                                                  &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &mt SLASH Z      &mt PERIOD X  &mt COMMA C   &mt M V  &mt N B           &mt DELETE ESCAPE    &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
                                                &kp LEFT_ALT  &mo 5    &kp LEFT_CONTROL  &lt 4 ENTER          &lt 4 SPACE       &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_WIN
             >;
@@ -123,11 +123,11 @@
         Starcraft {
             display-name = "RTS";
             bindings = <
-&kp N1        &kp N2       &kp N3       &kp N4     &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB       &mt LA(Q) Q  &mt LA(W) W  &kp E      &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK  &kp A        &mt LA(S) S  &kp D      &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp Y         &kp Z        &mt LA(X) X  &kp C      &kp V          &kp B                &ESC_SPACE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                        &kp SPACE  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 6   &kp RIGHT_ALT
+&kp N1      &kp N2       &kp N3       &kp N4     &mt LA(N5) N5  &mt LA(N6) NUMBER_6                               &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB     &mt LA(Q) Q  &mt LA(W) W  &kp E      &mt LA(R) R    &mt LA(T) T                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&CpsLk_to6  &kp A        &mt LA(S) S  &kp D      &mt LA(F) F    &mt LA(G) G                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp Y       &kp Z        &mt LA(X) X  &kp C      &kp V          &kp B                &ESC_SPACE        &kp ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                      &kp SPACE  &kp LEFT_ALT   &kp LEFT_CONTROL     &kp LEFT_SHIFT    &kp SPACE  &kp RIGHT_CONTROL  &mo 6   &kp RIGHT_ALT
             >;
         };
 
@@ -136,7 +136,7 @@
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                            &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                                   &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPSLOCK    &kp A         &kp S         &kp D         &kp F   &kp G                                                   &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&CpsLk_to6      &kp A         &kp S         &kp D         &kp F   &kp G                                                   &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &mt ENTER ESCAPE    &mt DELETE ENTER  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
                                             &kp LEFT_ALT  &mo 4   &kp LEFT_CONTROL  &kp SPACE           &kp SPACE         &kp RIGHT_CONTROL  &mo 4   &kp RIGHT_WIN
             >;
@@ -169,6 +169,16 @@
 &none  &none  &none  &none  &none  &none                  &none   &none  &none  &none  &none  &to 1
 &none  &none  &none  &none  &none  &none  &none    &none  &none   &none  &none  &none  &none  &to 0
                      &none  &none  &none  &none    &none  &none   &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
