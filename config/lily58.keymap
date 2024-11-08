@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CPSLK_TO6";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&none>, <&to 6>;
+            bindings = <&kp CAPSLOCK>, <&none>, <&to 6>, <&to 0>;
 
             tapping-term-ms = <200>;
         };
