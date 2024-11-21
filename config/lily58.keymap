@@ -122,11 +122,11 @@
         Double_Stack {
             display-name = "2X";
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4  &kp N5   &kp NUMBER_6                                                &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
-&kp TAB         &mt P Q          &mt O W       &mt I E       &mt U R  &mt Y T                                                     &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
-&kp CAPS        &mt SEMICOLON A  &mt L S       &mt K D       &mt J F  &mt H G                                                     &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &mt SLASH Z      &mt PERIOD X  &mt COMMA C   &mt M V  &mt N B           &mt DELETE ESCAPE    &Left_Right MB2 MB1  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
-                                               &kp LEFT_ALT  &mo 5    &kp LEFT_CONTROL  &lt 4 ENTER          &lt 4 SPACE          &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_WIN
+&mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 N5  &mt F6 NUMBER_6                                             &mt F7 N7          &mt F8 N8  &mt F9 N9      &mt F10 N0  &mt F11 MINUS  &mt F12 BACKSPACE
+&kp TAB          &mt P Q          &mt O W          &mt I E          &mt U R    &mt Y T                                                     &kp Y              &kp U      &kp I          &kp O       &kp P          &kp BACKSLASH
+&kp CAPS         &mt SEMICOLON A  &mt L S          &mt K D          &mt J F    &mt H G                                                     &kp H              &kp J      &kp K          &kp L       &kp SEMI       &kp SQT
+&kp LEFT_SHIFT   &mt SLASH Z      &mt PERIOD X     &mt COMMA C      &mt M V    &mt N B           &mt DELETE ESCAPE    &Left_Right MB2 MB1  &kp N              &kp M      &kp COMMA      &kp DOT     &kp FSLH       &kp RSHFT
+                                                   &kp LEFT_ALT     &mo 5      &kp LEFT_CONTROL  &lt 4 ENTER          &lt 4 SPACE          &kp RIGHT_CONTROL  &mo 5      &kp RIGHT_WIN
             >;
         };
 
