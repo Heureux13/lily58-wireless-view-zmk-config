@@ -174,11 +174,22 @@
 
         Layers {
             bindings = <
-&to 1  &to 2  &to 3  &none  &none  &none                  &none  &none  &none  &to 0  &none  &none
+&to 1  &to 2  &to 3  &to 7  &none  &none                  &none  &none  &none  &to 0  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
                      &none  &none  &none  &none    &none  &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            display-name = "Home";
+            bindings = <
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6                                                &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T                                                       &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
+&kp CLCK        &kp A         &kp S         &kp D         &kp F   &kp G                                                       &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V   &kp B             &mt DELETE ESCAPE    &Left_Right MB2 MB1  &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+                                            &kp LEFT_ALT  &mo 5   &kp LEFT_CONTROL  &lt 4 ENTER          &lt 4 SPACE          &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_WIN
             >;
         };
     };
