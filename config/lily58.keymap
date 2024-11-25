@@ -155,7 +155,7 @@
         Secondary {
             bindings = <
 &kp F1                    &kp F2                       &kp F3           &kp F4           &kp F5           &kp F6                                        &kp F7                &kp F8           &kp F9          &kp F10      &kp F11                &kp F12
-&mt LG(LC(LEFT)) PAGE_UP  &mt LC(LG(RIGHT)) PAGE_DOWN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp KP_SUBTRACT       &kp BACKSPACE    &kp UP_ARROW    &kp DELETE   &kp HOME               &kp END
+&mt LG(LC(LEFT)) PAGE_UP  &mt LC(LG(RIGHT)) PAGE_DOWN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &Slash_0                                      &kp K_PLAY_PAUSE      &kp K_PREV       &kp UP_ARROW    &kp K_NEXT   &kp HOME               &kp END
 &kp PRINTSCREEN           &kp KP_NUMBER_0              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD                                    &kp LEFT_PARENTHESIS  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT    &kp RIGHT_PARENTHESIS  &none
 &mo 5                     &kp MINUS                    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp X             &kp BACKSPACE    &kp ENTER  &kp EQUAL             &kp KP_MULTIPLY  &kp KP_DIVIDE   &kp KP_PLUS  &kp KP_SUBTRACT        &mo 5
                                                                         &kp LEFT_ALT     &to 4            &kp LEFT_CONTROL  &kp ENTER        &kp ENTER  &kp RIGHT_CONTROL     &none            &kp RIGHT_ALT
