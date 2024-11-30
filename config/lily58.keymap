@@ -179,7 +179,7 @@
 &mt LA(N1) NUMBER_1  &mt LA(N2) NUMBER_2  &mt LA(N3) NUMBER_3  &mt LA(N4) NUMBER_4  &mt LA(N5) N5  &mt LA(N6) NUMBER_6                                 &kp N7             &kp N8  &kp N9         &kp N0   &kp MINUS  &kp BACKSPACE
 &kp TAB              &mt LA(Q) Q          &mt LA(W) W          &mt LA(E) E          &mt LA(R) R    &mt LA(T) T                                         &kp Y              &kp U   &kp I          &kp O    &kp P      &kp BACKSLASH
 &kp CAPSLOCK         &mt LA(A) A          &mt LA(S) S          &mt LA(D) D          &mt LA(F) F    &mt LA(G) G                                         &kp H              &kp J   &kp K          &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT       &mt LA(Z) Z          &mt LA(X) X          &mt LA(C) C          &mt LA(V) V    &mt LA(B) B          &kp ESCAPE        &kp ENTER    &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
+&kp Y                &mt LA(Z) Z          &mt LA(X) X          &mt LA(C) C          &mt LA(V) V    &mt LA(B) B          &kp ESCAPE        &kp ENTER    &kp N              &kp M   &kp COMMA      &kp DOT  &kp FSLH   &kp RSHFT
                                                                &kp LEFT_ALT         &mo 7          &kp LEFT_CONTROL     &kp LEFT_SHIFT    &lt 4 SPACE  &kp RIGHT_CONTROL  &mo 5   &kp RIGHT_ALT
             >;
         };
