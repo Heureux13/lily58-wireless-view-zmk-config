@@ -177,7 +177,7 @@
         Bluebeam {
             bindings = <
 &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp N3         &kp LA(F4)     &kp N5         &kp LC(LS(D))                      &GL_HF             &kp N8             &kp N9             &kp N0                  &Copy_4                    &GG
-&none               &none               &kp W          &kp LC(LS(L))  &kp LC(LS(L))  &kp LC(LS(T))                      &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(O)))       &kp LS(LA(LC(P)))          &kp LC(LA(LS(NON_US_BACKSLASH)))
+&none               &none               &kp W          &kp LC(LS(L))  &kp LC(LS(L))  &kp LC(LS(Y))                      &kp LS(LA(LC(Y)))  &kp LS(LA(LC(U)))  &kp LS(LA(LC(I)))  &kp LS(LA(LC(O)))       &kp LS(LA(LC(P)))          &kp LC(LA(LS(NON_US_BACKSLASH)))
 &none               &kp A               &kp LC(LA(S))  &none          &kp LC(LS(M))  &kp LS(LA(LC(G)))                  &kp LS(LA(LC(H)))  &kp LS(LA(LC(J)))  &kp LC(LA(LS(K)))  &kp LS(LC(LA(L)))       &kp LS(LA(LC(SEMICOLON)))  &kp LS(LA(LC(SQT)))
 &none               &kp Z               &kp LC(LA(X))  &kp C          &kp LG(V)      &kp LS(LA(LC(B)))  &none    &none  &kp LS(LA(LC(B)))  &kp LS(LA(LC(N)))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(PERIOD)))  &kp LS(LA(LC(SLASH)))      &to 7
                                                        &none          &none          &none              &none    &none  &none              &none              &none
