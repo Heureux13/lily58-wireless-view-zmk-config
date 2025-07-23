@@ -207,7 +207,7 @@
 
         Mouse {
             bindings = <
-&none  &none  &none          &none          &none             &none                                       &none  &none  &none  &none  &none  &none
+&to 3  &none  &none          &none          &none             &none                                       &none  &none  &none  &none  &none  &to 0
 &none  &none  &none          &none          &kp BACKSPACE     &kp DELETE                                  &none  &none  &none  &none  &none  &none
 &none  &none  &none          &none          &none             &none                                       &none  &none  &none  &none  &none  &none
 &none  &none  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT_ARROW))  &none       &none  &none  &none  &none  &none  &none  &none
